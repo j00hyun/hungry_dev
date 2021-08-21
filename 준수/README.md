@@ -1,1 +1,1 @@
-[문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) - [문제 풀이]()
+1. [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) - [문제 풀이](https://github.com/j00hyun/hungry_dev/blob/junsoo/%EC%A4%80%EC%88%98/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_2%EB%8B%A8%EA%B3%84/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%95%95%EC%B6%95.js)
