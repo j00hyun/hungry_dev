@@ -1,3 +1,4 @@
+# https://school.programmers.co.kr/courses/13093/lessons/88779
 
 def solution(m, weights):
     weights.sort(reverse=True)
