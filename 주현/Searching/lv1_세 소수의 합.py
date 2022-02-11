@@ -1,7 +1,9 @@
 # https://school.programmers.co.kr/courses/13093/lessons/88778
   
+from itertools import combinations
+
 # n 이하 수 중에서 소수 목록 구하기 
-def prime_list(n):
+def get_prime_list(n):
     # 에라토스테네스의 체 초기화: n개 요소에 True 설정(소수로 간주)
     sieve = [True] * n 
 
@@ -16,14 +18,7 @@ def prime_list(n):
     return [i for i in range(2, n) if sieve[i] == True]
 
 def solution(n):
-    prime_arr = prime_list(n)
-    answer = 0
+    prime_arr = get_prime_list(n)
     
     # n이하 소수중에서 3개 수 조합
-    for a in range(len(prime_arr)):
-        for b in range(a + 1, len(prime_arr)):
-            for c in range(b + 1, len(prime_arr)):
-                if prime_arr[a] + prime_arr[b] + prime_arr[c] == n:
-                    answer += 1
-        
-    return answer 
+    return [sum(i) for i in combinations(prime_arr, 3)].count(n)
