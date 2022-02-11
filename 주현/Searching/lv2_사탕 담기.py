@@ -1,20 +1,12 @@
 # https://school.programmers.co.kr/courses/13093/lessons/88779
 
+from itertools import combinations
+
 def solution(m, weights):
-    weights.sort(reverse=True)
+    answer = 0
     
-    def recur(weights, total):
-        answer = 0
-        for idx in range(len(weights)):  
-            
-            # 가방 남을 경우
-            if total + weights[idx] < m:
-                if idx + 1 < len(weights):
-                    answer += recur(weights[idx+1:], total + weights[idx])
-            # 가방 가득 찰 경우 
-            elif total + weights[idx] == m:
-                answer += 1
-                
-        return answer
-    
-    return recur(weights, 0)
+    # 1개 부터 len(weights) 개까지 뽑는 조합
+    for n in range(1, len(weights)):
+        answer += [sum(w) for w in combinations(weights, n)].count(m)
+        
+    return answer
