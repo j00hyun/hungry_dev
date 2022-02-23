@@ -1,0 +1,45 @@
+# https://school.programmers.co.kr/tryouts/32192/challenges
+
+# 1. Greedy 사용 O(n)
+
+import math
+
+def solution(l, v):
+    max_interval = 0
+    v.sort()
+    
+    # 가로등 - 가로등 사이의 최대 간격
+    for i in range(1, len(v)):
+        max_interval = max(max_interval, v[i] - v[i - 1])
+    
+    # 맨앞과 맨끝 부분 고려
+    return max(math.ceil(max_interval / 2), v[0], l - v[-1])
+    
+# 2. Binary Searching 사용 O(nlogn)
+
+from collections import deque
+
+def solution(l, v):
+    max_interval = 0
+    queue = deque([v])
+    v.sort()
+    
+    while queue:
+        _v = queue.popleft()
+        
+        # 길이가 1일 경우 가로등 사이 간격을 구할 수 없음
+        if len(_v) == 1:
+            continue
+        
+        # 길이가 2일 경우 가로등 사이의 간격 구해 최댓값 비교
+        if len(_v) == 2:
+            max_interval = max(max_interval, _v[1] - _v[0])
+            continue
+        
+        # 길이가 2 이상일 경우 길이가 2가 될때 까지 계속 반으로 쪼개기
+        mid_idx = len(_v) // 2
+        queue.append(_v[:mid_idx + 1])
+        queue.append(_v[mid_idx:])
+    
+    # 맨앞과 맨끝 부분 고려
+    return max(math.ceil(max_interval / 2), v[0], l - v[-1])
