@@ -16,7 +16,7 @@ def solution(begin, target, words):
         
         # 현재까지 사용한 단어가 아니고, 알파벳 1개만 차이가 날 경우 큐에 저장
         for word in words:
-            if word not in progress and sum(1 for b, w in zip(curr, word) if b != w) == 1:
+            if word not in progress and sum(b != w for b, w in zip(curr, word)) == 1:
                 queue.append(progress + [word])
     
     # target 단어로 변환이 불가능한 경우 
