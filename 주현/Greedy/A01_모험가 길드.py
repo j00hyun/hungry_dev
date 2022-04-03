@@ -1,3 +1,5 @@
+# 이것이 취업을 위한 코딩 테스트다 with 파이썬 311p
+
 from collections import Counter
 
 N = int(input())
