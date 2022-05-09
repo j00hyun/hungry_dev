@@ -2,8 +2,7 @@
 ## 알고리즘 공부방
 
 ### 프로그래머스 1단계
-- [[1차] 뉴스 클러스터링](https://programmers.co.kr/learn/courses/30/lessons/17677) - [문제 풀이](
-https://github.com/parkjunoo/Algorithm/blob/master/2018%20KAKAO%20BLIND%20RECRUITMENT/%5B1%EC%B0%A8%5D%20%EB%89%B4%EC%8A%A4%20%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81.js)
+
 
 ### 프로그래머스 2단계 
 - [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) - [문제 풀이](https://github.com/parkjunoo/Algorithm/blob/master/programmers/level_2/%ED%83%80%EA%B2%9F%EB%84%98%EB%B2%84.js)
@@ -22,6 +21,8 @@ https://github.com/parkjunoo/Algorithm/blob/master/2018%20KAKAO%20BLIND%20RECRUI
 - [더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626) - [문제풀이](https://github.com/parkjunoo/Algorithm/blob/master/Heap/%EB%8D%94%EB%A7%B5%EA%B2%8C.java)
 - [주차 요금 계산](https://github.com/parkjunoo/Algorithm/blob/master/%EA%B5%AC%ED%98%84/%EC%A3%BC%EC%B0%A8_%EC%9A%94%EA%B8%88_%EA%B3%84%EC%82%B0.js) - [문제풀이](https://programmers.co.kr/learn/courses/30/lessons/92341)
 - [게임 맵 최단거리](https://github.com/parkjunoo/Algorithm/blob/master/BFS/%EA%B2%8C%EC%9E%84%20%EB%A7%B5%20%EC%B5%9C%EB%8B%A8%EA%B1%B0%EB%A6%AC.js) - [문제풀이](https://programmers.co.kr/learn/courses/30/lessons/1844)
+- [[1차] 뉴스 클러스터링](https://programmers.co.kr/learn/courses/30/lessons/17677) - [문제 풀이](
+https://github.com/parkjunoo/Algorithm/blob/master/2018%20KAKAO%20BLIND%20RECRUITMENT/%5B1%EC%B0%A8%5D%20%EB%89%B4%EC%8A%A4%20%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81.js)
 
 ### 프로그래머스 3단계
 - [입국심사](https://programmers.co.kr/learn/courses/30/lessons/43238) - [문제풀이](https://github.com/parkjunoo/Algorithm/blob/master/programmers/level_3/%EC%9E%85%EA%B5%AD%EC%8B%AC%EC%82%AC.js)
